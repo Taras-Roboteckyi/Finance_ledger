@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     box-sizing: border-box;
-
+    scroll-behavior: smooth;
     
   }
   a {
@@ -34,12 +34,18 @@ export const GlobalStyles = createGlobalStyle`
   }
   /*-------------Body--------------*/
   body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    
     background-color: #e6e6e6;
     width: 100%;
     height: 100%;
     min-height: 100vh;
     
+    ::-webkit-scrollbar {
+    display: none;
+}
   }
  
 `;
