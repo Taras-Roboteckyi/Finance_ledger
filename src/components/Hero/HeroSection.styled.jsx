@@ -5,8 +5,9 @@ import HeroImg2x from '../../images/home/showcase@2x.jpg';
 export const Section = styled.section`
   /* max-width: 480px;
   min-height: 533px; */
-  margin-left: auto;
-  margin-right: auto;
+  height: 533px;
+  /* margin-left: auto;
+  margin-right: auto; */
   /* text-align: center; */
   color: ${props => props.theme.colors.$white};
   background-color: #00000040; // 40 - aльфа канал який додає прозорість
@@ -19,15 +20,19 @@ export const Section = styled.section`
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${HeroImg2x});
+    background-position: center;
+    background-size: cover;
   }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     /* max-width: 768px;
     min-height: 1024px; */
+    height: 1024px;
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     /* max-width: 1360px;
     min-height: 768px; */
+    height: 768px;
   }
 `;
 
@@ -45,6 +50,7 @@ export const TitleHero = styled.h1`
   padding-left: 40px;
   padding-right: 40px;
   margin-bottom: 16px;
+  text-align: center;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     font-size: 55px;

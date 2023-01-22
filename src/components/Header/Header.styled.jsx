@@ -11,9 +11,9 @@ export const Heading = styled.header`
   /* animation: animateY 1000ms; */
   transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: ${prop => (prop.scrolled ? 'rgba(0, 0, 0, 0.6)' : 'unset')};
-  @media (max-width: 480px) {
+  /* @media (max-width: 480px) {
     width: 480px;
-  }
+  } */
 
   /*   @keyframes animateY {
     0% {
@@ -28,14 +28,26 @@ export const Heading = styled.header`
       transform: translateY(0);
     }
   } */
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    padding-bottom: 0px;
+  }
+
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    padding-top: 35px;
+  }
 `;
 
 export const HeaderContainer = styled.div`
+  /* padding-left: 20px;
+  padding-right: 20px; */
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
   }
+
   /* ul {
     display: flex;
     justify-content: center;

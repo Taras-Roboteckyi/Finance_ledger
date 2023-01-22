@@ -34,6 +34,11 @@ export const MenuLink = styled.a`
   font-size: 16px;
   line-height: 22px;
   color: ${props => props.theme.colors.$white};
+  transition: color 500ms;
+
+  &:hover {
+    color: ${props => props.theme.colors.$styleColor};
+  }
 
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     font-size: 18px;

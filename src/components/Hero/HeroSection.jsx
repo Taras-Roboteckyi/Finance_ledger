@@ -9,13 +9,13 @@ export const HeroSection = () => {
       role="region"
       aria-labelledby="We provide world class financial assistance"
     >
-      <Container>
-        <HeroContainer>
-          <TitleHero>The Sky Is The Limit</TitleHero>
-          <TextHero>We provide world class financial assistance</TextHero>
-          <Button icon content={'Read more'} />
-        </HeroContainer>
-      </Container>
+      {/* <Container> */}
+      <HeroContainer>
+        <TitleHero>The Sky Is The Limit</TitleHero>
+        <TextHero>We provide world class financial assistance</TextHero>
+        <Button icon content={'Read more'} />
+      </HeroContainer>
+      {/* </Container> */}
     </Section>
   );
 };
