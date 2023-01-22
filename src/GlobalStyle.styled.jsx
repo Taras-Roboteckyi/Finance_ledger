@@ -23,9 +23,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   ul,
   ol {
-    /* list-style: none; */
+    list-style: none;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
   }
   img {
     display: block;
@@ -37,8 +38,7 @@ export const GlobalStyles = createGlobalStyle`
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
-    
-    background-color: #e6e6e6;
+    margin: 0;
     width: 100%;
     height: 100%;
     min-height: 100vh;
