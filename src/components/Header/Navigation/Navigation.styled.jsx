@@ -15,7 +15,8 @@ export const MenuItem = styled.li`
   &:not(:last-child) {
     margin-right: 12px;
   }
-  &:hover {
+  &:hover,
+  &:focus {
     border-bottom: 1px solid ${props => props.theme.colors.$styleColor};
   }
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
@@ -36,7 +37,8 @@ export const MenuLink = styled.a`
   color: ${props => props.theme.colors.$white};
   transition: color 500ms;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: ${props => props.theme.colors.$styleColor};
   }
 

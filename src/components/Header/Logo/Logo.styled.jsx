@@ -7,7 +7,8 @@ export const LinkHome = styled.a`
   /* justify-content: center; */
   margin-bottom: 16px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  :hover {
+  :hover,
+  :focus {
     transform: scale(1.04);
     /* --tw-shadow: 0px 4px 20px rgba(32, 188, 198, 0.6), 0px 4px 10px #20bcc6;
     --tw-shadow-colored: 0px 4px 20px var(--tw-shadow-color), 0px 4px 10px var(--tw-shadow-color);

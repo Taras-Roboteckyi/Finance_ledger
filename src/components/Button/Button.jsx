@@ -9,6 +9,8 @@ export const Button = ({
   border = 'none',
   color = 'inherit',
   bgColor = '#2ebf4f',
+  hoverColor = 'inherit',
+  changeFontSize,
 }) => {
   return (
     <ButtonStyled
@@ -19,6 +21,8 @@ export const Button = ({
       border={border}
       color={color}
       bgColor={bgColor}
+      hoverColor={hoverColor}
+      changeFontSize={changeFontSize}
     >
       {icon && <Img tabIndex="0" src={arrowRight} alt="arrow right on the button" />}
       <span>{content}</span>

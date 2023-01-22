@@ -5,14 +5,14 @@ export const Constants = {
     $openSans: OpenSans,
   },
 
-  fontSize: {
+  /* fontSize: {
     minSize: '12px',
     maxHeroSize: '16px',
-  },
+  }, */
 
-  lineHeight: {
+  /*  lineHeight: {
     height: '1.2',
-  },
+  }, */
 
   colors: {
     $styleColor: '#28A745',
