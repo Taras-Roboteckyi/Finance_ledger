@@ -16,13 +16,13 @@ import {
 
 export const AboutHeroSection = () => {
   return (
-    <Section aria-labelledby="We provide bespoke solutions">
+    <Section id="about" role="region" aria-labelledby="We provide bespoke solutions">
       <picture>
         <source srcSet={(imgPeopleWebp1x, imgPeopleWebp2x)} type="image/webp" />
         <source srcSet={(imgPeopleJpg1x, imgPeopleJpg2x)} type="image/jpg" />
         <ImgPeople
           src={imgPeopleWebp1x}
-          alt="Four women in black suits stand in the middle of the office and look straight at us"
+          alt="Four women in black suits and two men stand in the middle of the office and look straight at us"
         />
       </picture>
       <AboutContainer>
@@ -36,10 +36,12 @@ export const AboutHeroSection = () => {
         <Button
           content={'Read more'}
           border={'1px solid #FFFFFF;'}
-          bgColor={'#FFFFFF'}
+          hoverBgColor={'#FFFFFF'}
           hoverColor={'#28A745'}
           fontSize={'16px'}
           changeFontSize={'18px'}
+          buttonBgColor={'inherit'}
+          
         />
       </AboutContainer>
     </Section>

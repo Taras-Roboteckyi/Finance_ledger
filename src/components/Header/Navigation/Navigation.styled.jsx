@@ -39,7 +39,7 @@ export const MenuLink = styled.a`
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.colors.$styleColor};
+    color: ${props => props.theme.colors.$placeholderColor};
   }
 
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {

@@ -13,7 +13,7 @@ export const ButtonStyled = styled.button`
   font-weight: 400;
   font-size: ${prop => prop.fontSize};
   line-height: 1.37;
-  background-color: ${props => props.theme.colors.$styleColor};
+  background-color: ${prop => prop.buttonBgColor};
   border: ${prop => prop.border};
   border-radius: 5px;
   cursor: pointer;
@@ -22,8 +22,9 @@ export const ButtonStyled = styled.button`
 
   &:hover,
   &:focus {
-    background-color: ${prop => prop.bgColor};
+    background-color: ${prop => prop.hoverBgColor};
     color: ${prop => prop.hoverColor};
+    border: ${prop => prop.hoverColor};
   }
 
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {

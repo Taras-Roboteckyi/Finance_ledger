@@ -19,6 +19,7 @@ export const Constants = {
     $white: '#FFFFFF',
     $textColor: '#333333',
     $placeholderColor: '#808080',
+    $bgColor: '#0284D0',
   },
 
   spacing: value => `${4 * value}px`,

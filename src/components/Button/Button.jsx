@@ -8,21 +8,24 @@ export const Button = ({
   fontSize = '18px',
   border = 'none',
   color = 'inherit',
-  bgColor = '#2ebf4f',
+  hoverBgColor = '#2ebf4f',
   hoverColor = 'inherit',
   changeFontSize,
+  buttonBgColor = '#28A745',
 }) => {
   return (
     <ButtonStyled
+      role="button"
       aria-haspopup="true"
       type="button"
       padding={padding}
       fontSize={fontSize}
       border={border}
       color={color}
-      bgColor={bgColor}
+      hoverBgColor={hoverBgColor}
       hoverColor={hoverColor}
       changeFontSize={changeFontSize}
+      buttonBgColor={buttonBgColor}
     >
       {icon && <Img tabIndex="0" src={arrowRight} alt="arrow right on the button" />}
       <span>{content}</span>
