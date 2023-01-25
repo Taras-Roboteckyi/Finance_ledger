@@ -21,7 +21,7 @@ import {
   Overlay,
   Paragraph,
   Picture,
-  Professional,
+  Profession,
   Section,
   TeamList,
   TeamListItem,
@@ -39,7 +39,7 @@ export const ProfessionalTeamSection = () => {
       <TeamList tabindex="0" role="listbox" aria-labelledby="Gallery professional team">
         <TeamListItem role="option" aria-selected="false">
           <Wrapper>
-            <picture>
+            <Picture>
               <source srcSet={(imgPerson1Webp1x, imgPerson1Webp2x)} type="image/webp"></source>
 
               <source srcSet={(imgPerson1Jpg1x, imgPerson1Jpg2x)} type="image/jpg"></source>
@@ -48,19 +48,19 @@ export const ProfessionalTeamSection = () => {
                 src={imgPerson1Jpg1x}
                 alt="A man of Asian appearance in a black suit is leaning against a brick wall in the office and is looking at us"
               />
-            </picture>
+            </Picture>
 
             <Overlay>
               <IconContainer />
             </Overlay>
           </Wrapper>
           <Name>John Doe</Name>
-          <Professional>President</Professional>
+          <Profession>President</Profession>
         </TeamListItem>
 
         <TeamListItem role="option" aria-selected="false">
           <Wrapper>
-            <picture>
+            <Picture>
               <source srcSet={(imgPerson2Webp1x, imgPerson2Webp2x)} type="image/webp"></source>
 
               <source srcSet={(imgPerson2Jpg1x, imgPerson2Jpg2x)} type="image/jpg"></source>
@@ -69,19 +69,19 @@ export const ProfessionalTeamSection = () => {
                 src={imgPerson2Jpg1x}
                 alt="A white woman in a light blouse sits in a black chair in the middle of the office and looks at us"
               />
-            </picture>
+            </Picture>
 
             <Overlay>
               <IconContainer />
             </Overlay>
           </Wrapper>
           <Name>Jane Doe</Name>
-          <Professional>Vice President</Professional>
+          <Profession>Vice President</Profession>
         </TeamListItem>
 
         <TeamListItem role="option" aria-selected="false">
           <Wrapper>
-            <picture>
+            <Picture>
               <source srcSet={(imgPerson3Webp1x, imgPerson3Webp2x)} type="image/webp"></source>
 
               <source srcSet={(imgPerson3Jpg1x, imgPerson3Jpg2x)} type="image/jpg"></source>
@@ -90,14 +90,14 @@ export const ProfessionalTeamSection = () => {
                 src={imgPerson3Jpg1x}
                 alt="A white man with a cup in his hands is sitting at a desk, smiling in the middle of the office and looking away"
               />
-            </picture>
+            </Picture>
 
             <Overlay>
               <IconContainer />
             </Overlay>
           </Wrapper>
           <Name>Steve Smith</Name>
-          <Professional>Marketing Head</Professional>
+          <Profession>Marketing Head</Profession>
         </TeamListItem>
       </TeamList>
     </Section>

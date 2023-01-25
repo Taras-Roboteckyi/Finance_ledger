@@ -5,6 +5,7 @@ import { HeroSection } from '../components/Hero/HeroSection';
 import { BusinessCasesSection } from '../components/BusinessCases/BusinessCasesSection';
 import { BlogSection } from '../components/Blog/BlogSection';
 import { ProfessionalTeamSection } from '../components/ProfesionalTeam/ProfessionalTeamSection';
+import { ContactSection } from '../components/Contact/ContactSection';
 
 export default function HomePage() {
   return (
@@ -16,6 +17,7 @@ export default function HomePage() {
         <BusinessCasesSection />
         <BlogSection />
         <ProfessionalTeamSection />
+        <ContactSection />
       </main>
     </>
   );

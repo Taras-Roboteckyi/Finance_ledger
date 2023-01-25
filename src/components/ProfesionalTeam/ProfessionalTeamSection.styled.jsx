@@ -43,7 +43,16 @@ export const Text = styled.p`
   }
 `;
 
-export const TeamList = styled.ul``;
+export const TeamList = styled.ul`
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    gap: 20px;
+  }
+`;
 
 export const TeamListItem = styled.li`
   &:not(:last-child) {
@@ -55,27 +64,6 @@ export const TeamListItem = styled.li`
       margin-bottom: 0px;
     }
   }
-  /* transition: border-bottom 500ms;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
-  &:not(:last-child) {
-    margin-right: 12px;
-  }
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid ${props => props.theme.colors.$styleColor};
-  }
-  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
-    &:not(:last-child) {
-      margin-right: 20px;
-    }
-  }
-  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
-    &:not(:last-child) {
-      margin-right: 40px;
-    }
-  } */
 `;
 export const Wrapper = styled.div`
   position: relative;
@@ -86,7 +74,14 @@ export const Wrapper = styled.div`
   }
 `;
 
-/* export const Picture = styled.picture``; */
+export const Picture = styled.picture`
+  @media (min-width: ${props => props.theme.breakpoints.tablet}) {
+    height: 148px;
+  }
+  @media (min-width: ${props => props.theme.breakpoints.desktop}) {
+    height: 287px;
+  }
+`;
 
 export const Overlay = styled.div`
   position: absolute;
@@ -95,11 +90,8 @@ export const Overlay = styled.div`
   top: 0;
   left: 0;
   display: grid;
-  /* place-items: center; */
   justify-items: center;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
+
   background-color: rgba(0, 0, 0, 0.6);
   opacity: 0;
 
@@ -120,6 +112,6 @@ export const Name = styled.h6`
   }
 `;
 
-export const Professional = styled.p`
+export const Profession = styled.p`
   text-align: center;
 `;
