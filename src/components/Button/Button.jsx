@@ -4,6 +4,7 @@ import arrowRight from '../../images/home/fa-solid_angle-right.png';
 export const Button = ({
   icon = false,
   content,
+  type = 'button',
   padding = '32px',
   fontSize = '18px',
   border = 'none',
@@ -17,7 +18,7 @@ export const Button = ({
     <ButtonStyled
       role="button"
       aria-haspopup="true"
-      type="button"
+      type={type}
       padding={padding}
       fontSize={fontSize}
       border={border}
