@@ -6,6 +6,7 @@ import { BusinessCasesSection } from '../components/BusinessCases/BusinessCasesS
 import { BlogSection } from '../components/Blog/BlogSection';
 import { ProfessionalTeamSection } from '../components/ProfesionalTeam/ProfessionalTeamSection';
 import { ContactSection } from '../components/Contact/ContactSection';
+import { Footer } from '../components/Footer/Footer';
 
 export default function HomePage() {
   return (
@@ -19,6 +20,7 @@ export default function HomePage() {
         <ProfessionalTeamSection />
         <ContactSection />
       </main>
+      <Footer />
     </>
   );
 }

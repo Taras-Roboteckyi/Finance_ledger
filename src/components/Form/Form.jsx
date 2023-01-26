@@ -18,17 +18,16 @@ export const Form = () => {
   const validationSchema = Yup.object({
     name: Yup.string()
       .min(3, 'Must contain at least 3 characters!')
-      .max(50, 'Can not contain more than 50 characters!'),
-    /* .required(`This is required field!`), */
-
+      .max(50, 'Can not contain more than 50 characters!')
+      .required(`This is required field!`),
     email: Yup.string()
-      .matches(
+      /* .matches(
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, //eslint-disable-line
         'Invalid e-mail',
-      )
+      ) */
       .min(3, 'Must contain at least 3 characters!')
-      .max(50, 'Can not contain more than 50 characters!'),
-    /* .required(`This is required field!`), */
+      .max(50, 'Can not contain more than 50 characters!')
+      .required(`This is required field!`),
   });
 
   const formik = useFormik({
@@ -37,8 +36,11 @@ export const Form = () => {
       email: '',
     },
     validationSchema,
+    validateOnChange: false,
+    validateOnBlur: false,
     onSubmit: values => {
       formik.resetForm({ name: '', email: '' });
+      console.log('values:', values);
     },
   });
 
@@ -71,12 +73,15 @@ export const Form = () => {
           <Label htmlFor="EmailContact">Enter email *</Label>
         </InputWrapper>
 
-        {formik.errors.email && formik.touched.email && (
-          <ErrorWrapper>
-            <ImgWarning />
-            <TextError>This is required field!</TextError>
-          </ErrorWrapper>
-        )}
+        {formik.errors.name &&
+          formik.touched.name &&
+          formik.errors.email &&
+          formik.touched.email && (
+            <ErrorWrapper>
+              <ImgWarning />
+              <TextError>This is required field!</TextError>
+            </ErrorWrapper>
+          )}
       </Wrapper>
       <Button type={'submit'} content={'Send'} padding={'56px'}></Button>
     </form>

@@ -51,7 +51,7 @@ export const ProfessionalTeamSection = () => {
             </Picture>
 
             <Overlay>
-              <IconContainer />
+              <IconContainer opacity={'0.8'} />
             </Overlay>
           </Wrapper>
           <Name>John Doe</Name>
@@ -72,7 +72,7 @@ export const ProfessionalTeamSection = () => {
             </Picture>
 
             <Overlay>
-              <IconContainer />
+              <IconContainer opacity={'0.8'} />
             </Overlay>
           </Wrapper>
           <Name>Jane Doe</Name>
@@ -93,7 +93,7 @@ export const ProfessionalTeamSection = () => {
             </Picture>
 
             <Overlay>
-              <IconContainer />
+              <IconContainer opacity={'0.8'} />
             </Overlay>
           </Wrapper>
           <Name>Steve Smith</Name>

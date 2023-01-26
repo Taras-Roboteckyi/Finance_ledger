@@ -2,18 +2,33 @@ import styled from 'styled-components';
 
 export const Section = styled.section`
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    display: flex;
+    display: inline-flex;
+    padding-bottom: 40px;
+    min-height: 354px;
+  }
+  @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
+    padding-bottom: 0px;
+    min-height: 454px;
+    /* Ф */
+  }
+`;
+export const ImgWrapper = styled.div`
+  @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
+    min-height: 354px;
+  }
+  @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
+    min-height: 454px;
   }
 `;
 
 export const ImgContact = styled.img`
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    height: 354px;
-    min-width: 368px;
+    /*  min-width: 390px; */
+    min-height: 354px;
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
-    height: 454px;
-    min-width: 670px;
+    min-height: 454px;
+    /*  min-width: 670px; */
   }
 `;
 
@@ -22,17 +37,15 @@ export const ContactsContainer = styled.div`
   color: ${props => props.theme.colors.$white};
 
   padding: 50px 20px 25px 20px;
-  /* font-size: 16px;
-  line-height: 22px;
 
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    padding: 62px 32px;
-    font-size: 18px;
-    line-height: 25px;
+    min-width: 340px;
+    padding: 32px;
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
-    padding: 80px 28px 86px 20px;
-  } */
+    padding: 56px 28px 77px 20px;
+    min-width: 690px;
+  }
 `;
 
 export const Title = styled.h6`
