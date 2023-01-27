@@ -6,6 +6,8 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
   return (
     <ContainerIcons>
       <Link
+        role="link"
+        tabindex="0"
         href="https://www.facebook.com/"
         target="_blank"
         rel="noreferrer"
@@ -16,6 +18,8 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
         <BsFacebook size="35px" />
       </Link>
       <Link
+        role="link"
+        tabindex="0"
         href="https://twitter.com/"
         target="_blank"
         rel="noreferrer"
@@ -26,6 +30,8 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
         <BsTwitter size="35px" />
       </Link>
       <LinkYoutube
+        role="link"
+        tabindex="0"
         href="https://www.youtube.com/"
         target="_blank"
         rel="noreferrer"
@@ -36,6 +42,8 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
         <BsYoutube size="40px" />
       </LinkYoutube>
       <Link
+        role="link"
+        tabindex="0"
         href="https://www.linkedin.com/"
         target="_blank"
         rel="noreferrer"

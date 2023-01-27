@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const NavList = styled.ul`
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
 `;
 
 export const MenuItem = styled.li`
@@ -39,7 +39,7 @@ export const MenuLink = styled.a`
 
   &:hover,
   &:focus {
-    color: ${props => props.theme.colors.$placeholderColor};
+    color: ${props => props.theme.colors.$styleColor};
   }
 
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {

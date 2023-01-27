@@ -1,20 +1,30 @@
 import styled from 'styled-components';
 
 export const Heading = styled.header`
-  position: fixed;
+  /*  position: fixed;
   z-index: 100;
+  width: 100vw;
   padding-top: 22px;
   padding-bottom: 12px;
   top: 0;
   left: 50%;
-  transform: translate(-50%);
+  transform: translate(-50%); */
   /* animation: animateY 1000ms; */
-  transition: transform 2000ms cubic-bezier(0.4, 0, 0.2, 1);
-  background-color: ${prop => (prop.scrolled ? 'rgba(0, 0, 0, 0.6)' : 'unset')};
+  position: ${prop => (prop.scrolledMobile ? 'fixed' : 'absolute')};
+  top: 0;
+  /* left: 50%; */
+  z-index: 100;
+  width: 100vw;
+  padding-top: 22px;
+  padding-bottom: 12px;
+  /* background-color: unset; */
+
+  background-color: ${prop => (prop.scrolledMobile ? '#00000080' : 'unset')};
+  transition: background-color 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+
   /* @media (max-width: 480px) {
     width: 480px;
   } */
-
   /*   @keyframes animateY {
     0% {
       transform: translateY(0);
@@ -29,7 +39,9 @@ export const Heading = styled.header`
     }
   } */
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
-    padding-bottom: 0px;
+    position: ${prop => (prop.scrolledTablet ? 'fixed' : 'absolute')};
+    padding-bottom: 15px;
+    background-color: ${prop => (prop.scrolledTablet ? '#00000080' : 'unset')};
   }
 
   @media (min-width: ${props => props.theme.breakpoints.desktop}) {
@@ -38,8 +50,8 @@ export const Heading = styled.header`
 `;
 
 export const HeaderContainer = styled.div`
-  /* padding-left: 20px;
-  padding-right: 20px; */
+  padding-left: 20px;
+  padding-right: 20px;
   @media (min-width: ${props => props.theme.breakpoints.tablet}) {
     display: flex;
     align-items: center;

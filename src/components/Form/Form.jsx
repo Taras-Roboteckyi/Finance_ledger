@@ -45,13 +45,12 @@ export const Form = () => {
   });
 
   return (
-    <form onSubmit={formik.handleSubmit}>
+    <form onSubmit={formik.handleSubmit} aria-label="Contact information">
       <Wrapper>
         <InputWrapper>
           <InputName
             type="text"
             name="name"
-            /*  autoComplete="off" */
             placeholder=" "
             onChange={formik.handleChange}
             onBlur={formik.handleBlur('name')}
@@ -65,7 +64,6 @@ export const Form = () => {
             type="email"
             name="email"
             placeholder=" "
-            /* autoComplete="off" */
             onChange={formik.handleChange}
             onBlur={formik.handleBlur('email')}
             value={formik.values.email}
@@ -78,7 +76,7 @@ export const Form = () => {
           formik.errors.email &&
           formik.touched.email && (
             <ErrorWrapper>
-              <ImgWarning />
+              <ImgWarning alt="Red danger triangle" />
               <TextError>This is required field!</TextError>
             </ErrorWrapper>
           )}

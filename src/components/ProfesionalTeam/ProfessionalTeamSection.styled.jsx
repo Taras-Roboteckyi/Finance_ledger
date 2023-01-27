@@ -68,7 +68,8 @@ export const TeamListItem = styled.li`
 export const Wrapper = styled.div`
   position: relative;
   transition: scale 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  :hover {
+  :hover,
+  :focus {
     scale: 1.02;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   }

@@ -4,7 +4,7 @@ export const LinkHome = styled.a`
   display: flex;
   align-items: center;
   cursor: pointer;
-  /* justify-content: center; */
+  justify-content: center;
   margin-bottom: 16px;
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   :hover,
