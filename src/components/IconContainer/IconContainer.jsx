@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { BsFacebook, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { GrLinkedinOption } from 'react-icons/gr';
 import { ContainerIcons, Link, LinkYoutube } from './IconContainer.styled';
@@ -55,4 +56,9 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
       </Link>
     </ContainerIcons>
   );
+};
+
+IconContainer.propTypes = {
+  iconHoverColor: PropTypes.string,
+  opacity: PropTypes.string,
 };

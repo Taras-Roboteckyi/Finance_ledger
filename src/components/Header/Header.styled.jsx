@@ -13,7 +13,7 @@ export const Heading = styled.header`
   position: ${prop => (prop.scrolledMobile ? 'fixed' : 'absolute')};
   top: 0;
   /* left: 50%; */
-  z-index: 100;
+  z-index: 30;
   width: 100vw;
   padding-top: 22px;
   padding-bottom: 12px;

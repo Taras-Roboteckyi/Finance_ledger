@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { ButtonStyled, Img } from './Button.styled';
 import arrowRight from '../../images/home/fa-solid_angle-right.png';
 
@@ -32,4 +33,18 @@ export const Button = ({
       <span>{content}</span>
     </ButtonStyled>
   );
+};
+
+Button.propTypes = {
+  icon: PropTypes.bool,
+  content: PropTypes.string,
+  type: PropTypes.string,
+  padding: PropTypes.string,
+  fontSize: PropTypes.string,
+  border: PropTypes.string,
+  color: PropTypes.string,
+  hoverBgColor: PropTypes.string,
+  hoverColor: PropTypes.string,
+  changeFontSize: PropTypes.string,
+  buttonBgColor: PropTypes.string,
 };
