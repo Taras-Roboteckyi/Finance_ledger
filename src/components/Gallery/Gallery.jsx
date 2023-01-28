@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { galleryImages } from './data/gallery';
 import Modal from './components/Modal';
+import { GalleryPositionContainer, ImgGallery } from './Gallery.styled';
 
 export function Gallery() {
   const [clickedImg, setClickedImg] = useState(null);
@@ -60,19 +61,20 @@ export function Gallery() {
   };
 
   return (
-    <div className="wrapper">
+    <GalleryPositionContainer aria-labelledby="section carousel images">
       {galleryImages.map((item, index) => (
-        //<div key={index} className="wrapper-images">
-        <picture key={index} className="wrapper-images">
+        <ImgGallery key={index} tabindex="0" aria-describedby="gallery cases image">
           <source srcSet={(item.smallWebp, item.largeWebp)} type="image/webp" />
           <source srcSet={(item.small, item.large)} type="image/jpg" />
           <img src={item.small} alt={item.alt} onClick={() => handleClick(item, index)} />
-        </picture>
-        //</div>
+        </ImgGallery>
       ))}
       <div>
         {clickedImg && (
           <Modal
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="dialog_label"
             clickedImg={clickedImg}
             handelRotationRight={handelRotationRight}
             setClickedImg={setClickedImg}
@@ -83,6 +85,6 @@ export function Gallery() {
           />
         )}
       </div>
-    </div>
+    </GalleryPositionContainer>
   );
 }

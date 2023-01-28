@@ -100,8 +100,8 @@ export const ArrowsRightContainer = styled.div`
   z-index: 999;
   top: calc(50% - 10px);
   left: calc(100% - 50px);
-  width: 100%;
-  height: 100%;
+  width: 30px;
+  height: 50px;
   cursor: pointer;
   opacity: 0;
   transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);

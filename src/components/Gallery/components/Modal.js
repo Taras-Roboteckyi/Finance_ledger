@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import myGif from '../../../images/gallery/loading.gif';
 import nextArrow from '../../../images/gallery/next.png';
@@ -58,10 +59,8 @@ const Modal = ({
     setIsLoading(true);
     setTimeout(() => {
       setIsLoading(false);
-    }, 1500);
+    }, 1000);
   };
-  console.log('currentIndex', currentIndex);
-  console.log('totalImgLength', totalImgLength);
 
   return (
     <>
@@ -70,7 +69,7 @@ const Modal = ({
           <img src={myGif} className="dismiss" alt="Spinner" />
         ) : (
           <>
-            <ImgContainer>
+            <ImgContainer aria-describedby="gallery image">
               <ImgItem src={clickedImg} alt="bigger pic" />
 
               {clickedImg && (
@@ -100,3 +99,13 @@ const Modal = ({
 };
 
 export default Modal;
+
+Modal.propTypes = {
+  clickedImg: PropTypes.string,
+  setClickedImg: PropTypes.func,
+  handelRotationRight: PropTypes.func,
+  handelRotationLeft: PropTypes.func,
+  currentIndex: PropTypes.number,
+  totalImgLength: PropTypes.number,
+  onClose: PropTypes.func,
+};

@@ -9,7 +9,7 @@ export const Section = styled.section`
   color: ${props => props.theme.colors.$textColor};
 
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    padding-top: 48px;
+    padding: 48px 32px 40px 32px;
     font-size: 18px;
     line-height: 25px;
   }
