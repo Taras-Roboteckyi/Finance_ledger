@@ -3,7 +3,7 @@ import imgContactJpg2x from '../../images/home/contact@2x.jpg';
 import imgContactWebp1x from '../../images/home/contact.webp';
 import imgContactWebp2x from '../../images/home/contact@2x.webp';
 
-import { Form } from '../Form/Form';
+import { FormComponent } from '../Form/Form';
 
 import { ContactsContainer, ImgContact, Section, Title, ImgWrapper } from './ContactSection.styled';
 
@@ -23,7 +23,7 @@ export const ContactSection = () => {
 
       <ContactsContainer>
         <Title>Request Callback</Title>
-        <Form />
+        <FormComponent />
       </ContactsContainer>
     </Section>
   );
