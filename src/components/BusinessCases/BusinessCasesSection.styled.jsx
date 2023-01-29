@@ -1,8 +1,6 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  /*  padding-top: 56px;
-  padding-bottom: 40px; */
   padding: 56px 20px 40px 20px;
   font-size: 16px;
   line-height: 22px;

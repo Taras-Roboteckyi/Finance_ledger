@@ -87,9 +87,6 @@ export const ErrorWrapper = styled.div`
   align-items: center;
   left: 8px;
   bottom: -20px;
-  /*  transition: 10s ease all;
-  -moz-transition: 10s ease all;
-  -webkit-transition: 10s ease all; */
 `;
 
 export const TextError = styled.span`

@@ -10,10 +10,7 @@ export const LinkHome = styled.a`
   :hover,
   :focus {
     transform: scale(1.04);
-    /* --tw-shadow: 0px 4px 20px rgba(32, 188, 198, 0.6), 0px 4px 10px #20bcc6;
-    --tw-shadow-colored: 0px 4px 20px var(--tw-shadow-color), 0px 4px 10px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
-      var(--tw-shadow); */
+
     filter: brightness(150%); // Змінює прозорість Лого
   }
   img {

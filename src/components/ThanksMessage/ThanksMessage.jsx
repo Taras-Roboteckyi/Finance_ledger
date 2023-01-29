@@ -15,7 +15,7 @@ export const ThanksMessage = () => {
         <p>Your form submission has been received</p>
         <LinkContainer>
           <Link to="/">
-            <ArrowLeft /* size="35px" */ />
+            <ArrowLeft />
             Back to our site
           </Link>
         </LinkContainer>

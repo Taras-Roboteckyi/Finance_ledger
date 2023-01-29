@@ -1,4 +1,5 @@
-/* import { Container } from './HomePage.styled'; */
+import { Route, Routes } from 'react-router-dom';
+
 import { AboutHeroSection } from '../components/AboutHero/AboutHeroSection';
 import { Header } from '../components/Header/Header';
 import { HeroSection } from '../components/Hero/HeroSection';
@@ -7,7 +8,6 @@ import { BlogSection } from '../components/Blog/BlogSection';
 import { ProfessionalTeamSection } from '../components/ProfesionalTeam/ProfessionalTeamSection';
 import { ContactSection } from '../components/Contact/ContactSection';
 import { Footer } from '../components/Footer/Footer';
-import { Route, Routes } from 'react-router-dom';
 import { ThanksMessage } from '../components/ThanksMessage/ThanksMessage';
 export default function HomePage() {
   return (

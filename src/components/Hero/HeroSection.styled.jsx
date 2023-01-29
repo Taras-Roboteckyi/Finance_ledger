@@ -3,12 +3,8 @@ import HeroImg1x from '../../images/home/showcase.jpg';
 import HeroImg2x from '../../images/home/showcase@2x.jpg';
 
 export const Section = styled.section`
-  /* max-width: 480px;
-  min-height: 533px; */
   height: 533px;
-  /* margin-left: auto;
-  margin-right: auto; */
-  /* text-align: center; */
+
   color: ${props => props.theme.colors.$white};
   background-color: #00000040; // 40 - aльфа канал який додає прозорість
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${HeroImg1x});
@@ -25,13 +21,9 @@ export const Section = styled.section`
   }
 
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    /* max-width: 768px;
-    min-height: 1024px; */
     height: 1024px;
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
-    /* max-width: 1360px;
-    min-height: 768px; */
     height: 768px;
   }
 `;

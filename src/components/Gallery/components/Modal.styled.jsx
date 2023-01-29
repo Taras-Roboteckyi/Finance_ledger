@@ -84,14 +84,14 @@ export const ArrowsLeftContainer = styled.div`
 
 export const ImgArrow = styled.img`
   width: 30px;
-  /*  height: 100px; */
+  
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     width: 60px;
-    /* height: 120px; */
+    
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     width: 80px;
-    /* height: 150px; */
+    
   }
 `;
 

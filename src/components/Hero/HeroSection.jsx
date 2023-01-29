@@ -1,5 +1,5 @@
 import { Section, HeroContainer, TitleHero, TextHero } from './HeroSection.styled';
-/* import { Container } from '../Сontainer/Container'; */
+
 import { Button } from '../Button/Button';
 
 export const HeroSection = () => {

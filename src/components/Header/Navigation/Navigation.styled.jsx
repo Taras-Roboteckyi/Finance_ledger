@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-/* export const Nav = styled.nav`` */
-
 export const NavList = styled.ul`
   display: flex;
   justify-content: center;

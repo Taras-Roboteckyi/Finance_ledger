@@ -9,7 +9,6 @@ export const Section = styled.section`
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     padding-bottom: 0px;
     min-height: 454px;
-    /* Ф */
   }
 `;
 export const ImgWrapper = styled.div`
@@ -23,12 +22,10 @@ export const ImgWrapper = styled.div`
 
 export const ImgContact = styled.img`
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
-    /*  min-width: 390px; */
     min-height: 354px;
   }
   @media screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     min-height: 454px;
-    /*  min-width: 670px; */
   }
 `;
 

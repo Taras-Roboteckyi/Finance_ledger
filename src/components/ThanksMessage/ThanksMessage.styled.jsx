@@ -40,9 +40,6 @@ export const Title = styled.h2`
 `;
 
 export const LinkContainer = styled.div`
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; */
   margin-top: 10px;
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {
     margin-top: 20px;

@@ -34,7 +34,3 @@ export const ButtonStyled = styled.button`
 export const Img = styled.img`
   margin-right: 8px;
 `;
-/* & > img {
-    display: inline-block;
-    margin-right: 8px;
-  } */

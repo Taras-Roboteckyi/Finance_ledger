@@ -5,9 +5,6 @@ export const Div = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
-  /* @media screen and (min-width: 320px) {
-    width: ${props => props.theme.breakpoints.mobile};
-  } */
   @media (min-width: 768px) {
     width: ${props => props.theme.breakpoints.tablet};
   }
