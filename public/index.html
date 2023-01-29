@@ -30,7 +30,21 @@
     <title>React App</title>
   </head>
   <body>
+    <form
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+      hidden
+      name="contact"
+      netlify-honeypot="bot-field"
+    >
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input name="bot-field" type="hidden" />
+    </form>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <!-- A little help for the Netlify bots if you're not using a SSG -->
+
     <div id="root"></div>
     <!--
       This HTML file is a template.

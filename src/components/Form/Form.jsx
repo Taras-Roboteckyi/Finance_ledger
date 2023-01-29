@@ -14,6 +14,12 @@ import {
   InputEmail,
 } from './Form.styled';
 
+const encode = data => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+};
+
 export const Form = () => {
   const validationSchema = Yup.object({
     name: Yup.string()
@@ -32,6 +38,8 @@ export const Form = () => {
 
   const formik = useFormik({
     initialValues: {
+      'bot-field': '',
+      'form-name': 'contact',
       name: '',
       email: '',
     },
@@ -41,11 +49,22 @@ export const Form = () => {
     onSubmit: values => {
       formik.resetForm({ name: '', email: '' });
       console.log('values:', values);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', values }),
+      })
+        .then(() => alert('"Form successfully submitted"'))
+        .catch(error => alert(error));
     },
   });
 
   return (
     <form onSubmit={formik.handleSubmit} aria-label="Contact information">
+      {/* You still need to add the hidden input with the form name to your JSX form */}
+      {/*  <input type="hidden" name="form-name" value="contact" /> */}
+      <input type="hidden" name="bot-field" />
+      <input type="hidden" name="form-name" />
       <Wrapper>
         <InputWrapper>
           <InputName
