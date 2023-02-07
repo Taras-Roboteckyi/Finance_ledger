@@ -27,7 +27,7 @@ const Modal = ({
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [isArrowLeft, setIsArrowLeft] = useState(null);
-  const [isArrowRight, setIsArrowRight] = useState(true);
+  const [isArrowRight, setIsArrowRight] = useState(null);
 
   useEffect(() => {
     /////Show-hidden left arrow/////////

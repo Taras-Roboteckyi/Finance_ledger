@@ -61,9 +61,9 @@ export function Gallery() {
   };
 
   return (
-    <GalleryPositionList aria-labelledby="section carousel images">
+    <GalleryPositionList aria-labelledby="List carousel images">
       {galleryImages.map((item, index) => (
-        <li key={index} tabindex="0">
+        <li key={index} tabIndex="0">
           <ImgGallery aria-describedby="gallery cases image">
             <source srcSet={(item.smallWebp, item.largeWebp)} type="image/webp" />
             <source srcSet={(item.small, item.large)} type="image/jpg" />
