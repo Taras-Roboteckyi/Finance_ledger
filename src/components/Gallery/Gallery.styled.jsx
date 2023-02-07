@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const GalleryPositionContainer = styled.div`
+export const GalleryPositionList = styled.ul`
   display: grid;
 
   grid-template-rows: repeat(6, 1fr);

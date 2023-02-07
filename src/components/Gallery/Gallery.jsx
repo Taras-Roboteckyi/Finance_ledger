@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import { galleryImages } from './data/gallery';
 import Modal from './components/Modal';
-import { GalleryPositionContainer, ImgGallery } from './Gallery.styled';
+import { GalleryPositionList, ImgGallery } from './Gallery.styled';
 
 export function Gallery() {
   const [clickedImg, setClickedImg] = useState(null);
@@ -61,13 +61,15 @@ export function Gallery() {
   };
 
   return (
-    <GalleryPositionContainer aria-labelledby="section carousel images">
+    <GalleryPositionList aria-labelledby="section carousel images">
       {galleryImages.map((item, index) => (
-        <ImgGallery key={index} tabindex="0" aria-describedby="gallery cases image">
-          <source srcSet={(item.smallWebp, item.largeWebp)} type="image/webp" />
-          <source srcSet={(item.small, item.large)} type="image/jpg" />
-          <img src={item.small} alt={item.alt} onClick={() => handleClick(item, index)} />
-        </ImgGallery>
+        <li key={index} tabindex="0">
+          <ImgGallery aria-describedby="gallery cases image">
+            <source srcSet={(item.smallWebp, item.largeWebp)} type="image/webp" />
+            <source srcSet={(item.small, item.large)} type="image/jpg" />
+            <img src={item.small} alt={item.alt} onClick={() => handleClick(item, index)} />
+          </ImgGallery>
+        </li>
       ))}
       <div>
         {clickedImg && (
@@ -85,6 +87,6 @@ export function Gallery() {
           />
         )}
       </div>
-    </GalleryPositionContainer>
+    </GalleryPositionList>
   );
 }
