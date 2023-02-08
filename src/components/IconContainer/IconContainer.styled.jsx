@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
-export const ContainerIcons = styled.div`
+export const IconsList = styled.ul`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+export const IconsItem = styled.li`
+  :not(:last-child) {
+    margin-right: 25px;
+  }
 `;
 
 export const Link = styled.a`
@@ -14,10 +20,6 @@ export const Link = styled.a`
     opacity: ${prop => prop.opacity};
     color: ${prop => prop.iconHoverColor};
   }
-
-  :not(:last-child) {
-    margin-right: 25px;
-  }
 `;
 
 export const LinkYoutube = styled.a`
@@ -27,8 +29,4 @@ export const LinkYoutube = styled.a`
     opacity: ${prop => prop.opacity};
     color: ${prop => prop.iconHoverColor};
   }
-
-  margin-right: 25px;
-
-  padding-top: 5px;
 `;
