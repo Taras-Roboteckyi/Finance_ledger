@@ -22,6 +22,11 @@ export const Link = styled.a`
   }
 `;
 
+export const IconsItemLinkYoutube = styled.li`
+  padding-top: 5px;
+  margin-right: 25px;
+`;
+
 export const LinkYoutube = styled.a`
   color: ${props => props.theme.colors.$white};
   :hover,

@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
 import { BsFacebook, BsTwitter, BsYoutube } from 'react-icons/bs';
 import { GrLinkedinOption } from 'react-icons/gr';
-import { IconsList, Link, LinkYoutube, IconsItem } from './IconContainer.styled';
+import {
+  IconsList,
+  Link,
+  LinkYoutube,
+  IconsItem,
+  IconsItemLinkYoutube,
+} from './IconContainer.styled';
 
 export const IconContainer = ({ iconHoverColor, opacity }) => {
   return (
@@ -34,7 +40,7 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
           <BsTwitter size="35px" />
         </Link>
       </IconsItem>
-      <IconsItem tabIndex="0">
+      <IconsItemLinkYoutube tabIndex="0">
         <LinkYoutube
           aria-label="Youtube"
           role="link"
@@ -47,7 +53,7 @@ export const IconContainer = ({ iconHoverColor, opacity }) => {
         >
           <BsYoutube size="42px" />
         </LinkYoutube>
-      </IconsItem>
+      </IconsItemLinkYoutube>
       <IconsItem tabIndex="0">
         <Link
           aria-label="Linkedin"
