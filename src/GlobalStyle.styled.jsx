@@ -35,9 +35,10 @@ export const GlobalStyles = createGlobalStyle`
   }
   /*-------------Body--------------*/
   body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
+   
     margin: 0;
     width: 100%;
     height: 100%;

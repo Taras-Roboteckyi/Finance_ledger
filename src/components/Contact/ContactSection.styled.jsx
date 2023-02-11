@@ -47,6 +47,7 @@ export const ContactsContainer = styled.div`
 
 export const Title = styled.h6`
   font-size: 32px;
+  font-weight: 400;
   line-height: 48px;
   color: ${props => props.theme.colors.$textColor};
   text-align: center;

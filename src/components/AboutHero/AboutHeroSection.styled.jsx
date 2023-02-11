@@ -41,6 +41,7 @@ export const TextProposition = styled.p`
 
 export const Title = styled.h2`
   font-size: 31px;
+  font-weight: 400;
   line-height: 43px;
   margin-bottom: 24px;
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {

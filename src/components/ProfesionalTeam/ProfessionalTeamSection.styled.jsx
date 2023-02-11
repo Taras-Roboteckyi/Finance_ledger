@@ -23,6 +23,7 @@ export const Paragraph = styled.p`
 
 export const Title = styled.h5`
   font-size: 32px;
+  font-weight: 400;
   line-height: 44px;
   text-align: center;
   margin-bottom: 24px;
@@ -103,6 +104,7 @@ export const Overlay = styled.div`
 
 export const Name = styled.h6`
   font-size: 20px;
+  font-weight: 400;
   line-height: 28px;
   text-align: center;
   margin-bottom: 8px;

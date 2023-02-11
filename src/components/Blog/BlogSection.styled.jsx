@@ -42,6 +42,7 @@ export const DataText = styled.p`
 
 export const Title = styled.h4`
   font-size: 32px;
+  font-weight: 400;
   line-height: 44px;
   margin-bottom: 24px;
   @media screen and (min-width: ${props => props.theme.breakpoints.tablet}) {

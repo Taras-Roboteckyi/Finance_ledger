@@ -24,6 +24,7 @@ export const Paragraph = styled.p`
 
 export const Title = styled.h3`
   font-size: 32px;
+  font-weight: 400;
   line-height: 44px;
   text-align: center;
   margin-bottom: 24px;
