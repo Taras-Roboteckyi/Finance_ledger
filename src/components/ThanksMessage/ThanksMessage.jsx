@@ -7,7 +7,7 @@ import {
   ArrowLeft,
 } from './ThanksMessage.styled';
 
-export const ThanksMessage = () => {
+export function ThanksMessage() {
   return (
     <BackgroundContainer>
       <MessageContainer>
@@ -22,4 +22,4 @@ export const ThanksMessage = () => {
       </MessageContainer>
     </BackgroundContainer>
   );
-};
+}
