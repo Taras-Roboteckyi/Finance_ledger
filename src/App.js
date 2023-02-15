@@ -1,9 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 
-/* import HomePage from './views/HomePage'; */
-/* import { ThanksMessage } from '../components/ThanksMessage/ThanksMessage'; */
-
 import AppLoader from './components/Loader/Loader';
 
 const HomePage = lazy(() =>

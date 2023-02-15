@@ -8,8 +8,8 @@ export function Gallery() {
   const [clickedImg, setClickedImg] = useState(null);
   const [currentIndex, setCurrentIndex] = useState(null);
 
-  /////////Prohibits scrolling of the body when the modal is open////////////
   useEffect(() => {
+    /////////Prohibits scrolling of the body when the modal is open////////////
     if (clickedImg) {
       document.body.style.overflow = 'hidden';
     }
